@@ -1,0 +1,11 @@
+<div class="section">
+  <h2>Select a word to check it</h2>
+  <div class="buttons">
+    <button class="word-group" *ngFor="let word of words, let i = index" id="id{{i}}" (click)="toggleWord(i)">{{word}}</button>
+  </div>
+  <div class="new-word">
+    <label for="new-word">Add a new word:</label>
+    <input type="text" id="new-word" value="''" [(ngModel)]="newWord" (keyup.enter)="addWord(newWord)">
+    <input type="submit" value="Add" (click)="addWord(newWord)">
+  </div>
+</div>

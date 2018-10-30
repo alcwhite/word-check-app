@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(to top right, teal, paleturquoise);
+  font-family: Helvetica;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h2 {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+.section {
+  width: 100%;
+  background-color: lightgray;
+  margin: 0;
+  padding: 10px 0;
+}

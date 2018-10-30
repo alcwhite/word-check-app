@@ -1,0 +1,10 @@
+<div class="section">
+  <button (click)="showMessage()" (mouseenter)="setData()" (focus)="setData()">Test<em *ngIf="buttonWord">{{' ' + buttonWord}}</em></button>
+  <div *ngIf="active" class="message">
+    <p>You have used the word "{{ word }}" {{ num }} {{ num === 1 ? "time" : "times" }} in {{ total }} words.</p>
+    <div *ngIf="percent >= 0.5" class="message extra-message">
+      <p>This constitutes {{ percent }}% of your total word count.</p>
+      <p *ngIf="percent > 1">If this is not a name, article, or conjunction, you may want to consider replacing some instances of it.</p>
+    </div>
+  </div>
+</div>

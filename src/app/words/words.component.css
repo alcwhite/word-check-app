@@ -1,0 +1,36 @@
+.active {
+  background-color: teal;
+  color: white;
+}
+button {
+  border: 0;
+  display: inline-block;
+  margin: 3px;
+  padding: 7px;
+  background-color: paleturquoise;
+  font-family: Helvetica, sans-serif;
+}
+.buttons {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+h2 {
+  font-family: Helvetica;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+.new-word {
+  width: 80%;
+  margin: auto;
+}
+input[type="text"] {
+  margin-left: 5px;
+}
+label {
+  font-family: Helvetica;
+}
